@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bounds practica</title>
+    <title>practica bonus</title>
     <style>
         *{
             margin: 0;
@@ -45,26 +45,26 @@
 </head>
 <body>
     <h1>Selecciona la fotografía</h1>
-    <form id="imageForm"> 
+    <form id="formFoto"> 
         <label for="user">Escribe el número de la imagen que deseas</label>
         <input type="text" id="user"> 
         <input type="submit" value="Mostrar">
     </form>
-    <div id="imageContainer"> 
-        <img id="imagensita" src="" alt="">
+    <div id="contenedorImagen"> 
+        <img id="fotito" src="" alt="">
     </div>
     <script>
         const user = document.getElementById("user");
         const url = "https://picsum.photos/id/";
         const size = "/200/200";
-        const imagensita = document.getElementById("imagensita");
+        const fotito = document.getElementById("fotito");
 
 
         imageForm.addEventListener("submit", evento => {
             evento.preventDefault();
 
             const src = url + user.value + size;
-            imagensita.src = src;
+            fotito.src = src;
         });
     </script>
 </body>
