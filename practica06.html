@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>práctica06</title>
+    <title>practica06</title>
 <style>
     *{
         margin: 0;
@@ -31,11 +31,11 @@ input{
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(0, 0, 0);
 }
     #b{
         color: white;
-        background-color: blue;
+        background-color: rgb(194, 10, 10);
     }
     label{
         display: block;
@@ -56,10 +56,10 @@ input{
         loginform.addEventListener("submit", evento => {
             evento.preventDefault()
             //console.log(evento)
-            let u = document.getElemenByID("user").value
-            let p = document.getElemenByID("password").value
+            let u = document.getElementById("user").value
+            let p = document.getElementById("password").value
             //alert("Usuario"+u+"Contraseña:"+p)
-            alert('Usuario: ${u} y Contraseña: ${p}')
+            alert(`Usuario: ${u} y Contraseña: ${p}`)
         })
     </script>
 </body>
